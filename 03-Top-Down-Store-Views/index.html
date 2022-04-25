@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Top Down Stores View</title>
+  </head>
+
+  <body>
+    <div class="sidenav">
+      <div class="logo-container">
+        <a href="#">
+          <img
+            class="logo"
+            alt="AWM Smartshelf logo"
+            src="images/AWM-Logo-Smart-Shelf-White.52fe45f5.png"
+          />
+        </a>
+      </div>
+
+      <div class="options-container">
+        <h2 class="stores-title">Stores</h2>
+        <ul class="stores-list">
+          <li>1901</li>
+          <li>OXXO</li>
+          <li>T-Mobile</li>
+          <li>Truist</li>
+          <li>ADNOC</li>
+          <li>CoSa</li>
+          <li>Job Trailer</li>
+          <li>Compass</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main-header">
+        <p class="title">Top Down Stores View</p>
+      </div>
+
+      <div class="stores-container">
+        <div class="tabs">
+          <!-- 1901 Container -->
+          <input
+            type="radio"
+            class="radio"
+            id="nineteen01"
+            name="tabs"
+            checked="checked"
+          />
+          <label class="tab" for="nineteen01">1901</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">1901</h2> -->
+            <div class="floor-plan nineteen01-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/1901.QuickEats.Cooler.Left"
+                id="cooler-left"
+                class="gondola"
+                >Cooler Left</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/1901.QuickEats.Cooler.Middle"
+                id="cooler-middle"
+                class="gondola"
+                >Cooler Middle</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/1901.QuickEats.Cooler.Right"
+                id="cooler-right"
+                class="gondola"
+                >Cooler Right</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/1901.QuickEats.F202"
+                id="f202"
+                class="gondola"
+                >F202</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/1901.QuickEats.F203"
+                id="f203"
+                class="gondola"
+                >F203</a
+              >
+              <p id="nineteen01-gate" class="gate">Gate</p>
+            </div>
+          </div>
+          <!-- Oxxo Container -->
+          <input type="radio" class="radio" id="oxxo" name="tabs" />
+          <label class="tab" for="oxxo">Oxxo</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">Oxxo</h2> -->
+            <div class="floor-plan oxxo-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.01-04.Cooler"
+                id="oxxo-gondola-01"
+                class="gondola"
+                >1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.01-04.Cooler"
+                id="oxxo-gondola-02"
+                class="gondola"
+                >2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.01-04.Cooler"
+                id="oxxo-gondola-03"
+                class="gondola"
+                >3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.01-04.Cooler"
+                id="oxxo-gondola-04"
+                class="gondola"
+                >4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.05-07.Cooler"
+                id="oxxo-gondola-05"
+                class="gondola"
+                >5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.05-07.Cooler"
+                id="oxxo-gondola-06"
+                class="gondola"
+                >6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.05-07.Cooler"
+                id="oxxo-gondola-07"
+                class="gondola"
+                >7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.08-09.Gondola"
+                id="oxxo-gondola-08"
+                class="gondola"
+                >8</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.08-09.Gondola"
+                id="oxxo-gondola-09"
+                class="gondola"
+                >9</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.10.Cooler"
+                id="oxxo-gondola-10"
+                class="gondola"
+                >10</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.11.Endcap"
+                id="oxxo-gondola-11"
+                class="gondola"
+                >11</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.12-13.Gondola"
+                id="oxxo-gondola-12"
+                class="gondola"
+                >12</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.12-13.Gondola"
+                id="oxxo-gondola-13"
+                class="gondola"
+                >13</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.14.Endcap"
+                id="oxxo-gondola-14"
+                class="gondola"
+                >14</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.15-16.Gondola"
+                id="oxxo-gondola-15"
+                class="gondola"
+                >15</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.15-16.Gondola"
+                id="oxxo-gondola-16"
+                class="gondola"
+                >16</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.17.Endcap"
+                id="oxxo-gondola-17"
+                class="gondola"
+                >17</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.18-20.Gondola"
+                id="oxxo-gondola-18"
+                class="gondola"
+                >18</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.18-20.Gondola"
+                id="oxxo-gondola-19"
+                class="gondola"
+                >19</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.18-20.Gondola"
+                id="oxxo-gondola-20"
+                class="gondola"
+                >20</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.21.Cooler"
+                id="oxxo-gondola-21"
+                class="gondola"
+                >21</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.22-24.Gondola"
+                id="oxxo-gondola-22"
+                class="gondola"
+                >22</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.22-24.Gondola"
+                id="oxxo-gondola-23"
+                class="gondola"
+                >23</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.22-24.Gondola"
+                id="oxxo-gondola-24"
+                class="gondola"
+                >24</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.25-26.Gondola"
+                id="oxxo-gondola-25"
+                class="gondola"
+                >25</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.25-26.Gondola"
+                id="oxxo-gondola-26"
+                class="gondola"
+                >26</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.27-28.Gondola"
+                id="oxxo-gondola-27"
+                class="gondola"
+                >27</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.27-28.Gondola"
+                id="oxxo-gondola-28"
+                class="gondola"
+                >28</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.29.Gondola"
+                id="oxxo-gondola-29"
+                class="gondola"
+                >29</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.30-32.Gondola"
+                id="oxxo-gondola-30"
+                class="gondola"
+                >30</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.30-32.Gondola"
+                id="oxxo-gondola-31"
+                class="gondola"
+                >31</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.30-32.Gondola"
+                id="oxxo-gondola-32"
+                class="gondola"
+                >31</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Oxxo.HQ.33.Gondola"
+                id="oxxo-gondola-33"
+                class="gondola"
+                >33</a
+              >
+              <p id="oxxo-enter-gate" class="gate">Enter</p>
+              <p id="oxxo-exit-gate" class="gate">Exit</p>
+            </div>
+          </div>
+
+          <!-- T-mobile Container -->
+          <input type="radio" class="radio" id="t-mobile" name="tabs" />
+          <label class="tab" for="t-mobile">T-mobile</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">T-mobile</h2> -->
+            <div class="floor-plan t-mobile-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Cooler.01-02"
+                id="t-mobile-gondola-01"
+                class="gondola"
+                >1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Cooler.01-02"
+                id="t-mobile-gondola-02"
+                class="gondola"
+                >2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Cooler.03-05"
+                id="t-mobile-gondola-03"
+                class="gondola"
+                >3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Cooler.03-05"
+                id="t-mobile-gondola-04"
+                class="gondola"
+                >4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Cooler.03-05"
+                id="t-mobile-gondola-05"
+                class="gondola"
+                >5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.06-08"
+                id="t-mobile-gondola-06"
+                class="gondola"
+                >6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.06-08"
+                id="t-mobile-gondola-07"
+                class="gondola"
+                >7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.06-08"
+                id="t-mobile-gondola-08"
+                class="gondola"
+                >8</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.09-11"
+                id="t-mobile-gondola-09"
+                class="gondola"
+                >9</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.09-11"
+                id="t-mobile-gondola-10"
+                class="gondola"
+                >10</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.09-11"
+                id="t-mobile-gondola-11"
+                class="gondola"
+                >11</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.12-13"
+                id="t-mobile-gondola-12"
+                class="gondola"
+                >12</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/T-Mobile.Gondola.12-13"
+                id="t-mobile-gondola-13"
+                class="gondola"
+                >13</a
+              >
+              <p id="t-mobile-gate" class="gate">Gate</p>
+            </div>
+          </div>
+
+          <!-- Truist Container -->
+          <input type="radio" class="radio" id="truist" name="tabs" />
+          <label class="tab" for="truist">Truist</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">Truist</h2> -->
+            <div class="floor-plan truist-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.01-03"
+                id="truist-gondola-01"
+                class="gondola"
+                >1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.01-03"
+                id="truist-gondola-02"
+                class="gondola"
+                >2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.01-03"
+                id="truist-gondola-03"
+                class="gondola"
+                >3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Cooler.04-07"
+                id="truist-gondola-04"
+                class="gondola"
+                >4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Cooler.04-07"
+                id="truist-gondola-05"
+                class="gondola"
+                >5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Cooler.04-07"
+                id="truist-gondola-06"
+                class="gondola"
+                >6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Cooler.04-07"
+                id="truist-gondola-07"
+                class="gondola"
+                >7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Cooler.08-09"
+                id="truist-gondola-08"
+                class="gondola"
+                >8</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Cooler.08-09"
+                id="truist-gondola-09"
+                class="gondola"
+                >9</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.10-12"
+                id="truist-gondola-10"
+                class="gondola"
+                >10</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.10-12"
+                id="truist-gondola-11"
+                class="gondola"
+                >11</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.10-12"
+                id="truist-gondola-12"
+                class="gondola"
+                >12</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.13-15"
+                id="truist-gondola-13"
+                class="gondola"
+                >13</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.13-15"
+                id="truist-gondola-14"
+                class="gondola"
+                >14</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Truist.Gondola.13-15"
+                id="truist-gondola-15"
+                class="gondola"
+                >15</a
+              >
+              <p id="truist-gate" class="gate">Gate</p>
+            </div>
+          </div>
+
+          <!-- ADNOC Container -->
+          <input type="radio" class="radio" id="adnoc" name="tabs" />
+          <label class="tab" for="adnoc">ADNOC</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">ADNOC</h2> -->
+            <div class="floor-plan adnoc-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..01-03g.media"
+                id="adnoc-gondola-01"
+                class="gondola"
+                >1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..01-03g.media"
+                id="adnoc-gondola-02"
+                class="gondola"
+                >2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..01-03g.media"
+                id="adnoc-gondola-03"
+                class="gondola"
+                >3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..04-06c.media"
+                id="adnoc-gondola-04"
+                class="gondola"
+                >4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..04-06c.media"
+                id="adnoc-gondola-05"
+                class="gondola"
+                >5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..04-06c.media"
+                id="adnoc-gondola-06"
+                class="gondola"
+                >6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..07-09g.media"
+                id="adnoc-gondola-07"
+                class="gondola"
+                >7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..07-09g.media"
+                id="adnoc-gondola-08"
+                class="gondola"
+                >8</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..07-09g.media"
+                id="adnoc-gondola-09"
+                class="gondola"
+                >9</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..10-11g.media"
+                id="adnoc-gondola-10"
+                class="gondola"
+                >10</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..10-11g.media"
+                id="adnoc-gondola-11"
+                class="gondola"
+                >11</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..12-13g.media"
+                id="adnoc-gondola-12"
+                class="gondola"
+                >12</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/adnc.adgo.dubai.kc-233..12-13g.media"
+                id="adnoc-gondola-13"
+                class="gondola"
+                >13</a
+              >
+              <p id="adnoc-gate-start" class="gate">Enter</p>
+              <p id="adnoc-gate-end" class="gate">Exit</p>
+              <p id="adnoc-coffee" class="gate">Coffee</p>
+            </div>
+          </div>
+
+          <!-- CoSa Container -->
+          <input type="radio" class="radio" id="cosa" name="tabs" />
+          <label class="tab" for="cosa">CoSa</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">CoSa</h2> -->
+            <div class="floor-plan cosa-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.01-04"
+                id="cosa-gondola-01"
+                class="gondola"
+                >1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.01-04"
+                id="cosa-gondola-02"
+                class="gondola"
+                >2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.01-04"
+                id="cosa-gondola-03"
+                class="gondola"
+                >3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.01-04"
+                id="cosa-gondola-04"
+                class="gondola"
+                >4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.05-08"
+                id="cosa-gondola-05"
+                class="gondola"
+                >5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.05-08"
+                id="cosa-gondola-06"
+                class="gondola"
+                >6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.05-08"
+                id="cosa-gondola-07"
+                class="gondola"
+                >7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.05-08"
+                id="cosa-gondola-08"
+                class="gondola"
+                >8</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.09-12"
+                id="cosa-gondola-09"
+                class="gondola"
+                >9</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.09-12"
+                id="cosa-gondola-10"
+                class="gondola"
+                >10</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.09-12"
+                id="cosa-gondola-11"
+                class="gondola"
+                >11</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.09-12"
+                id="cosa-gondola-12"
+                class="gondola"
+                >12</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.13-17"
+                id="cosa-gondola-13"
+                class="gondola"
+                >13</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.13-17"
+                id="cosa-gondola-14"
+                class="gondola"
+                >14</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.13-17"
+                id="cosa-gondola-15"
+                class="gondola"
+                >15</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.13-17"
+                id="cosa-gondola-16"
+                class="gondola"
+                >16</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.COSA.Gondola.13-17"
+                id="cosa-gondola-17"
+                class="gondola"
+                >17</a
+              >
+              <p id="cosa-gate" class="gate">Gate</p>
+              <p id="cosa-ipad" class="gate">Ipad</p>
+            </div>
+          </div>
+
+          <!-- Compass Container -->
+          <input type="radio" class="radio" id="compass" name="tabs" />
+          <label class="tab" for="compass">Compass</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">Compass</h2> -->
+            <div class="floor-plan compass-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Cooler"
+                id="compass-gondola-01"
+                class="gondola"
+                >C1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Cooler"
+                id="compass-gondola-02"
+                class="gondola"
+                >C2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Cooler"
+                id="compass-gondola-03"
+                class="gondola"
+                >C3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Cooler"
+                id="compass-gondola-04"
+                class="gondola"
+                >C4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Dry.Goods"
+                id="compass-gondola-05"
+                class="gondola"
+                >G5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Dry.Goods"
+                id="compass-gondola-06"
+                class="gondola"
+                >G6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Dry.Goods"
+                id="compass-gondola-07"
+                class="gondola"
+                >G7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/AvenueC.Dry.Goods"
+                id="compass-gondola-08"
+                class="gondola"
+                >G8</a
+              >
+              <p id="compass-gate" class="gate">Gate</p>
+            </div>
+          </div>
+
+          <!-- Job Trailer Container -->
+          <input type="radio" class="radio" id="job-trailer" name="tabs" />
+          <label class="tab" for="job-trailer">Job Trailer</label>
+          <div class="tab-container">
+            <!-- <h2 class="title-floor-plan">Job Trailer</h2> -->
+            <div class="floor-plan job-trailer-floor-plan">
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.01-05"
+                id="job-trailer-gondola-01"
+                class="gondola"
+                >1</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.01-05"
+                id="job-trailer-gondola-02"
+                class="gondola"
+                >2</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.01-05"
+                id="job-trailer-gondola-03"
+                class="gondola"
+                >3</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.01-05"
+                id="job-trailer-gondola-04"
+                class="gondola"
+                >4</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.01-05"
+                id="job-trailer-gondola-05"
+                class="gondola"
+                >5</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.06-07"
+                id="job-trailer-gondola-06"
+                class="gondola"
+                >6</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.06-07"
+                id="job-trailer-gondola-07"
+                class="gondola"
+                >7</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.08-11"
+                id="job-trailer-gondola-08"
+                class="gondola"
+                >8</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.08-11"
+                id="job-trailer-gondola-09"
+                class="gondola"
+                >9</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.08-11"
+                id="job-trailer-gondola-10"
+                class="gondola"
+                >10</a
+              >
+              <a
+                href="https://portal4.smartshelf.com/productMapper/Opticrib.JT.Gondola.08-11"
+                id="job-trailer-gondola-11"
+                class="gondola"
+                >11</a
+              >
+              <p id="job-trailer-gate" class="gate">Door</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
