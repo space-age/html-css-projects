@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outside-background">
+      <!-- ------------------Start Form---------------------------- -->
+      <form>
+        <h1>Movie Gender Survey</h1>
+        <p class="desciption">
+          <strong>About:</strong>
+          The survey is about what genre of Movies you will like to watch for
+          2022.
+        </p>
+
+        <!-- ------------------ Personal Details ---------------------------- -->
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <!-- ------------------ First name ---------------------------- -->
+          <div class="form-control">
+            <label for="fname">First name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              required="required"
+              placeholder="John"
+            />
+          </div>
+
+          <!-- ------------------ Last name ---------------------------- -->
+          <div class="form-control">
+            <label for="lname">Last name:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              required="required"
+              placeholder="Casillas"
+            />
+          </div>
+
+          <!-- ------------------ Email ---------------------------- -->
+          <div class="form-control">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required="required"
+              placeholder="john@email.com"
+            />
+          </div>
+
+          <!-- ------------------ Gender Input ---------------------------- -->
+          <div class="form-control">
+            <label for="gender"> Please select your gender: </label>
+            <p>
+              <input type="radio" id="genderMale" name="gender" value="male" />
+              Male <br / >
+              <input
+                type="radio"
+                id="genderFemale"
+                name="gender"
+                value="female"
+              />
+              Female
+              <br />
+              <input
+                type="radio"
+                id="other"
+                name="gender"
+                required="required"
+                value="notDisclose"
+              />
+              Other
+            </p>
+          </div>
+
+          <!-- ------------------ Age ---------------------------- -->
+          <div class="form-control">
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              required="required"
+              placeholder="25"
+              min="0"
+            />
+          </div>
+
+          <!-- ------------------ Describes you---------------------------- -->
+          <div class="form-control">
+            <label for="role" id="label-role">
+              Which option best describes you?
+            </label>
+            <!-- ------------------ Drop-down options ---------------------------- -->
+            <select name="role" id="role">
+              <option value="option1">Watch several movies ever week</option>
+              <option value="option2">Watch a movie once a week</option>
+              <option value="option3">Watch a movie once a month</option>
+              <option value="option4">Don't really watch movies</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- ------------------ General Questions about Movies -------------------->
+        <fieldset>
+          <legend>General questions</legend>
+          <div class="questions">
+            <!-- ------------------ General Question #1 -------------------->
+            <div class="question">
+              <h3 class="question-title" for="question-question1">
+                How often do you head to the theaters?
+              </h3>
+              <div class="answers">
+                <!-- ------------------ Answer #1 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question1-answer1"
+                    name="question1"
+                    value="coupleTimes"
+                  />
+                  <label class="radio-answer-label" for="question1-answer1"
+                    >Maybe a couple of times a year</label
+                  >
+                </div>
+                <!-- ------------------ Answer #2 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question1-answer2"
+                    name="question1"
+                    value="monthly"
+                  />
+                  <label class="radio-answer-label" for="question1-answer2"
+                    >I try to go every month or two</label
+                  >
+                </div>
+                <!-- ------------------ Answer #3 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question1-answer3"
+                    name="question1"
+                    value="barely"
+                  />
+                  <label class="radio-answer-label" for="question1-answer3"
+                    >Barely ever</label
+                  >
+                </div>
+                <!-- ------------------ Answer #4 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question1-answer4"
+                    name="question1"
+                    value="weekly"
+                  />
+                  <label class="radio-answer-label" for="question1-answer4"
+                    >Weekly</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------ General Question #2a -------------------->
+            <div class="question">
+              <h3 class="question-title" for="question-question2">
+                How many streaming services have you subscribed to, either now
+                or in the past?
+              </h3>
+              <div class="answers">
+                <!-- ------------------ Answer #1 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question2-answer1"
+                    name="question2"
+                    value="one"
+                  />
+                  <label class="radio-answer-label" for="question2-answer1"
+                    >Just one</label
+                  >
+                </div>
+                <!-- ------------------ Answer #2 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question2-answer2"
+                    name="question2"
+                    value="two"
+                  />
+                  <label class="radio-answer-label" for="question2-answer2"
+                    >Two</label
+                  >
+                </div>
+                <!-- ------------------ Answer #3 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question2-answer3"
+                    name="question2"
+                    value="moreThanThree"
+                  />
+                  <label class="radio-answer-label" for="question2-answer3"
+                    >Three or more</label
+                  >
+                </div>
+                <!-- ------------------ Answer #4 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question2-answer4"
+                    name="question2"
+                    value="none"
+                  />
+                  <label class="radio-answer-label" for="question2-answer4"
+                    >None</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------ General Question #3 -------------------->
+            <div class="question">
+              <h3 class="question-title" for="question-question3">
+                Some movies are events! Have you ever lined up to get tickets
+                for a film before?
+              </h3>
+              <div class="answers">
+                <!-- ------------------ Answer #1 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question3-answer1"
+                    name="question3"
+                    value="never"
+                  />
+                  <label class="radio-answer-label" for="question3-answer1"
+                    >Never</label
+                  >
+                </div>
+                <!-- ------------------ Answer #2 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question3-answer2"
+                    name="question3"
+                    value="once"
+                  />
+                  <label class="radio-answer-label" for="question3-answer2"
+                    >Just once</label
+                  >
+                </div>
+                <!-- ------------------ Answer #3 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question3-answer3"
+                    name="question3"
+                    value="online"
+                  />
+                  <label class="radio-answer-label" for="question3-answer3"
+                    >Don't you buy tickets online?</label
+                  >
+                </div>
+                <!-- ------------------ Answer #4 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question3-answer4"
+                    name="question3"
+                    value="hours"
+                  />
+                  <label class="radio-answer-label" for="question3-answer4"
+                    >I have put in a few hours in line, sure</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------ General Question #4 -------------------->
+            <div class="question">
+              <h3 class="question-title" for="question-question4">
+                Is the movie ever better than the book?
+              </h3>
+              <div class="answers">
+                <!-- ------------------ Answer #1 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question4-answer1"
+                    name="question4"
+                    value="depends"
+                  />
+                  <label class="radio-answer-label" for="question4-answer1"
+                    >Depends on the book/movie combo</label
+                  >
+                </div>
+                <!-- ------------------ Answer #2 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question4-answer2"
+                    name="question4"
+                    value="notApplicable"
+                  />
+                  <label class="radio-answer-label" for="question4-answer2"
+                    >I've never read a book that had a movie made from it</label
+                  >
+                </div>
+                <!-- ------------------ Answer #3 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question4-answer3"
+                    name="question4"
+                    value="yes"
+                  />
+                  <label class="radio-answer-label" for="question4-answer3"
+                    >Yes!</label
+                  >
+                </div>
+                <!-- ------------------ Answer #4 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question4-answer4"
+                    name="question4"
+                    value="no"
+                  />
+                  <label class="radio-answer-label" for="question4-answer4"
+                    >No</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------ General Question #5a -------------------->
+            <div class="question">
+              <h3 class="question-title" for="question-question5">
+                Are you down for a 3D movie?
+              </h3>
+              <div class="answers">
+                <!-- ------------------ Answer #1 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question5-answer1"
+                    name="question5"
+                    value="no"
+                  />
+                  <label class="radio-answer-label" for="question5-answer1"
+                    >Nope</label
+                  >
+                </div>
+                <!-- ------------------ Answer #2 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question5-answer2"
+                    name="question5"
+                    value="maybe"
+                  />
+                  <label class="radio-answer-label" for="question5-answer2"
+                    >Maybe for a big, blockbuster film</label
+                  >
+                </div>
+                <!-- ------------------ Answer #3 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question5-answer3"
+                    name="question5"
+                    value="overIt"
+                  />
+                  <label class="radio-answer-label" for="question5-answer3"
+                    >It's a gimmick and I'm over it</label
+                  >
+                </div>
+                <!-- ------------------ Answer #4 -------------------->
+                <div class="answer">
+                  <input
+                    class="radio-answer"
+                    type="radio"
+                    id="question5-answer4"
+                    name="question5"
+                    value="yes"
+                  />
+                  <label class="radio-answer-label" for="question5-answer4"
+                    >For sure!</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ------------------ Movie Genres Selection -------------------->
+        <fieldset>
+          <legend>Movie Genres Selections</legend>
+          <div class="genre-section">
+            <h3 class="genre-title">Genre Selections</h3>
+            <p class="genre-description">
+              Describe how you feel about each gender.
+            </p>
+          </div>
+
+          <table class="genre-table">
+            <thead>
+              <tr>
+                <th>Gender</th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Neutral</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Action</td>
+                <td>
+                  <input type="radio" value="action-strongly-disagree"
+                  name="action"
+                </td>
+                <td>
+                  <input type="radio" value="action-disagree" name="action"
+                </td>
+                <td>
+                  <input type="radio" value="action-neutral" name="action"
+                </td>
+                <td><input type="radio" value="action-agree" name="action"</td>
+                <td>
+                  <input type="radio" value="action-strongly-agree"
+                  name="action"
+                </td>
+              </tr>
+              <tr>
+                <td>Comedy</td>
+                <td>
+                  <input type="radio" value="comdey-strongly-disagree"
+                  name="comdey"
+                </td>
+                <td>
+                  <input type="radio" value="comdey-disagree" name="comdey"
+                </td>
+                <td>
+                  <input type="radio" value="comdey-neutral" name="comdey"
+                </td>
+                <td><input type="radio" value="comdey-agree" name="comdey"</td>
+                <td>
+                  <input type="radio" value="comdey-strongly-agree"
+                  name="comdey"
+                </td>
+              </tr>
+              <tr>
+                <td>Horror</td>
+                <td>
+                  <input type="radio" value="horror-strongly-disagree"
+                  name="horror"
+                </td>
+                <td>
+                  <input type="radio" value="horror-disagree" name="horror"
+                </td>
+                <td>
+                  <input type="radio" value="horror-neutral" name="horror"
+                </td>
+                <td><input type="radio" value="horror-agree" name="horror"</td>
+                <td>
+                  <input type="radio" value="horror-strongly-agree"
+                  name="horror"
+                </td>
+              </tr>
+              <tr>
+                <td>Romance</td>
+                <td>
+                  <input type="radio" value="romance-strongly-disagree"
+                  name="romance"
+                </td>
+                <td>
+                  <input type="radio" value="romance-disagree" name="romance"
+                </td>
+                <td>
+                  <input type="radio" value="romance-neutral" name="romance"
+                </td>
+                <td>
+                  <input type="radio" value="romance-agree" name="romance"
+                </td>
+                <td>
+                  <input type="radio" value="romance-strongly-agree"
+                  name="romance"
+                </td>
+              </tr>
+              <tr>
+                <td>History</td>
+                <td>
+                  <input type="radio" value="history-strongly-disagree"
+                  name="history"
+                </td>
+                <td>
+                  <input type="radio" value="history-disagree" name="history"
+                </td>
+                <td>
+                  <input type="radio" value="history-neutral" name="history"
+                </td>
+                <td>
+                  <input type="radio" value="history-agree" name="history"
+                </td>
+                <td>
+                  <input type="radio" value="history-strongly-agree"
+                  name="history"
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <!-- ------------------ Comments -------------------->
+        <fieldset>
+          <legend>Comments</legend>
+          <div class="comments">
+            <!-- <label for="comment">Any comments or suggestions:</label> -->
+            <!-- <br /> -->
+            <textarea
+              class="comment-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Any comments or suggestions:"
+              cols="80"
+              rows="7"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ------------------ Sumbit Form -------------------->
+        <div class="submit-form">
+          <button class="submit-button" type="submit" value="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
