@@ -1,0 +1,278 @@
+/*
+
+---01 TYPOGRAPHY SYSTEM
+
+  - FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  - Font weights
+    Default: 400
+      Medium: 500
+      Semi Bold: 600
+      Bold: 700
+
+  - Line weight:
+    default: 1
+    Small: 
+    Medium: 
+    Paragraph default: 
+
+  - Letter spacing
+
+  - SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  
+  
+  ---02 COLORS
+  
+  Primary: 
+  - Tints:
+  - Shades: 
+  - Accents:
+  - Greys:
+
+  ---05 SHADOWS
+  
+  ---06 BORDER-RADIUS
+    Deafult:
+    Medium: 
+  
+  ---07 WHITESPACE
+  - SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
+/**************************/
+/* Resetting all default values */
+/**************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #000;
+}
+
+/**************************/
+/* General Components */
+/**************************/
+
+/* This container is going to be the element that we're
+always going to use in order to center the content on our page
+so inside of the browser viewpoint */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 0;
+  row-gap: 9.6rem;
+  padding-bottom: 4.8rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+  font-family: "Roboto";
+  /* background-color: lightblue; */
+  color: #ced4da;
+  text-shadow: -1px 1px 2px #999, 1px 1px 2px #999, 1px -1px 0 #999,
+    -1px -1px 0 #999;
+  text-decoration: underline #3bc9db;
+  text-decoration-thickness: 1px;
+}
+
+/**************************/
+/* Header */
+/**************************/
+.header {
+  /* background-color: #222; */
+  /* background: linear-gradient(0.25turn, #222, #000, #222); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  font-family: "Roboto";
+  color: #3bc9db;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-shadow: -1px 1px 2px #ced4da, 1px 1px 2px #ced4da, 1px -1px 0 #ced4da,
+    -1px -1px 0 #ced4da;
+}
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav {
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #ced4da;
+  text-shadow: -1px 1px 2px #999, 1px 1px 2px #999, 1px -1px 0 #999,
+    -1px -1px 0 #999;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(59, 201, 219);
+}
+
+/**************************/
+/* Section hero */
+/**************************/
+
+.section-hero {
+  font-family: "Roboto";
+  background-color: #000;
+  /* background: linear-gradient(0.25turn, #222, #000, #222); */
+  padding: 4.8rem 0 9.6rem 0; /*the space between the sections*/
+}
+
+.hero-title {
+  color: #ced4da;
+  font-size: 6.4rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+  text-shadow: -1px 1px 2px #999, 1px 1px 2px #999, 1px -1px 0 #999,
+    -1px -1px 0 #999;
+}
+
+.hero-author {
+  color: #fff;
+  text-shadow: -1px 1px 2px #555, 1px 1px 2px #555, 1px -1px 0 #555,
+    -1px -1px 0 #555;
+  font-size: 2.2rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.hero {
+  /* background-color: #bbb; */
+  max-width: 130rem;
+  margin: 0 auto; /*This centers your container in the middle of website*/
+  padding: 0 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  background-image: url(images/Template.jpg); /*fallback */
+  background: linear-gradient(rgba(217, 119, 242, 0), rgba(59, 200, 219, 0.1)),
+    url(images/Template.jpg);
+
+  /* background: linear-gradient(
+      90deg,
+      rgba(217, 119, 242, 0) 0%,
+      rgba(238, 190, 250, 0.2) 25%,
+      rgba(243, 217, 250, 0.1) 50%,
+      rgba(238, 190, 250, 0.2) 75%,
+      rgba(217, 119, 242, 0) 100%
+    ),
+    url(images/Template.jpg); */
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  width: 75%;
+  height: 60rem;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #444;
+}
+
+/**************************/
+/* Top Movies */
+/**************************/
+.section-top-movies {
+  padding: 4.8rem 0;
+  background-color: #000;
+}
+
+.top-movie-img {
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.movie-img {
+  /* max-width: 100%; */
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-content {
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #eee;
+}
+
+.movie-title {
+  color: #fff;
+  color: #3bc9db;
+  /* background-color: #3bc9db; */
+  font-size: 3.6rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.movie-date {
+  /* background-color: coral; */
+  font-size: 1.8rem;
+  text-align: center;
+  color: #999;
+  padding-bottom: 2rem;
+}
+
+.movie-description {
+  font-size: 2.4rem;
+  color: #eee;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.movie-stars {
+  color: #eee;
+  padding-left: 2rem;
+  font-size: 2rem;
+  line-height: 2;
+  padding-bottom: 3rem;
+}
